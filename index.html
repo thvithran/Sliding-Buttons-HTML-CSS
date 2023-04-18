@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Button On & Off</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="custom-checkbox">
+        <input id="status" 
+               type="checkbox" 
+               name="status">
+        <label for="status">
+          <div class="status-switch"
+               data-unchecked="Off"
+               data-checked="On">
+          </div>
+        </label>
+      </div>
+</body>
+</html>
+
+<!--
+Explanation:
+1) We wrap everything in a [div] which we’ll use to set an overall height and width for our Toggle Switch
+2) There is a checkbox input which we’ll hide with our CSS styles, the main content will be inside the label element (which itself has a further div inside it)
+3) Specifying the input‘s id inside the for attribute of the label the element allows the user to check/uncheck the checkbox input element by clicking the label element
+4) The div inside the label has two data attributes (data-unchecked and data-checked) which will form the text for the two states of our slide toggle
+
+-->
